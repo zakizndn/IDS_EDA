@@ -13,5 +13,6 @@ st.write(df.head(5))
 
 # Display the boxplot using Streamlit
 st.write("#### Box Plot: Age")
-box_plot = sns.boxplot(x=df['Age'])
-st.pyplot()
+fig, ax = plt.subplots()
+sns.boxplot(x=df['Age'], ax=ax)
+st.pyplot(fig)
