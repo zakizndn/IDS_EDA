@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("diabetes.csv")
 
 # Display the first 5 rows of the dataframe
-st.write("#A### Sample of the Data")
+st.write("#### Sample of the Data")
 st.write(df.head(5))
 
 # Display the boxplot using Streamlit
